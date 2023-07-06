@@ -1,8 +1,12 @@
 package com.example.security.Dto;
 
 import com.example.security.entity.Role;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 public class AppUserDto {
+    Logger logger=LoggerFactory.getLogger(AppUserDto.class);
     private int id;
     private String login;
     private String password;
@@ -11,6 +15,7 @@ public class AppUserDto {
     public int getId() {
         return id;
     }
+
 
     public void setId(int id) {
         this.id = id;
